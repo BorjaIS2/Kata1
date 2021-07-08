@@ -14,13 +14,10 @@ import java.time.LocalDate;
 public class Person {
     private final String name;
     private final LocalDate birthname;
+    
     public Person(String name,LocalDate birthname) {
         this.name=name;
         this.birthname=birthname;
-    }
-
-    Person() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     public String getName() {
@@ -37,11 +34,5 @@ public class Person {
 
     private int toYears(long days) {
         return (int) (days/365.25);
-    }
-    
-    
-    
-    
-    
-    
+    }   
 }
